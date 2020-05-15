@@ -13,8 +13,8 @@ public class LoginLogic {
      * @param model
      * @return 次ページ名
      */
-	public String  loginString(LoginForm form,Model model){
-		
+	public String  loginAuth(LoginForm form,Model model){
+
 		// ログインID
         String uid = form.getUid();
         // パスワード
