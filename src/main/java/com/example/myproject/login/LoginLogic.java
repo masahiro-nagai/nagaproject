@@ -1,10 +1,9 @@
 package com.example.myproject.login;
 
-import org.springframework.stereotype.Component;
 import org.springframework.ui.Model;
 
 import com.example.myproject.constants.Constants;
-@Component
+
 public class LoginLogic {
 	/**
      * ログイン認証を行い、次ページ情報を返却する
@@ -16,11 +15,10 @@ public class LoginLogic {
      */
 	public String  loginString(LoginForm form,Model model){
 		
-		 //ログインID
+		// ログインID
         String uid = form.getUid();
-         //パスワード
+        // パスワード
         String pwd = form.getPwd();
-       
 
         if ("aaa".equals(uid) && "aa".equals(pwd)) {
             // ユーザaaa
