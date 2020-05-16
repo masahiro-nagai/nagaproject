@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.example.myproject.constants.Constants;
 import com.example.myproject.login.LoginForm;
 
-@Controller
-@RequestMapping(value = "/loginUser")
+@Controller //これによってコントローラーとSpringbootでは認識される
+@RequestMapping(value = "/loginUser")  //リクエストに対してメソッドやハンドラをマッピングできる
 public class LoginUserController {
 
     @Autowired
-    private HttpSession session;
+    private HttpSession session; //セッションスコープ設定のために宣言
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String init(Model model) {

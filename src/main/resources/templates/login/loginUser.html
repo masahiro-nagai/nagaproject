@@ -5,11 +5,12 @@
     <meta charset="utf-8" />
   </head>
   <body>
+  <!-- リンクURL th:属性名="@{/  }" -->
   	<form method="post" action="#" th:action="@{./loginUser}" th:object="${form}">
 	    <h1>Welcome to User!!!</h1>
 	    <div>
-	      <span th:text="${message}"></span>
-	      <span th:text="${session}"></span>
+	      <span th:text="${message}"></span>　<!-- テキストの置き換えth:text"${  }" messageの値を埋め込む-->
+	      <span th:text="${session}"></span>　
 	    </div>
 	    <input type="submit" name="back" value="戻る" />
     </form>
